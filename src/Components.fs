@@ -2,6 +2,7 @@ namespace App
 
 open Feliz
 open Feliz.Router
+open Fable.Formatting.Markdown
 
 type Components =
     /// <summary>
@@ -41,4 +42,10 @@ type Components =
                 | [ "counter" ] -> Components.Counter()
                 | otherwise -> Html.h1 "Not found"
             ]
+        ]
+
+    [<ReactComponent>]
+    static member MarkdownDiv(x: string) =
+        Html.div [
+            prop.dangerouslySetInnerHTML (Markdown.ToHtml x)
         ]

@@ -6,9 +6,13 @@ type Markdown = string
 
 type VideoLength = int
 
+type Video = (Url * VideoLength)
+
 type MediaResource =
-| Video of Url * VideoLength
+| Video of Video
 | Image of Url
+
+type Color = string
 
 type Tag = string
 

@@ -37,10 +37,11 @@ open Model
                                     prop.style [
                                         style.width 200
                                         style.height 200
+                                        style.paddingTop 70
                                     ]
                                     prop.children [
                                         Html.img [
-                                            prop.src "/img/logo.png"
+                                            prop.src "/graphics/logo.png"
                                         ]
                                     ]
                                 ]

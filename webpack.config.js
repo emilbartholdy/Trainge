@@ -118,7 +118,7 @@ module.exports = {
         publicPath: "/",
         contentBase: resolve(CONFIG.assetsDir),
         port: CONFIG.devServerPort,
-        proxy: CONFIG.devServerProxy,
+        //proxy: CONFIG.devServerProxy,
         hot: true,
         inline: true
     },

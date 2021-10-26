@@ -22,6 +22,7 @@ open Model
     Bulma.columns [
       columns.isGapless
       columns.isVCentered
+      
       prop.style [
         style.borderBottom (1, borderStyle.solid, color.lightGray)
         style.marginBottom 0

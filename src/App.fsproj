@@ -10,6 +10,7 @@
     <Compile Include="Components.fs" />
     <Compile Include="MediaPage.fs" />
     <Compile Include="MediaPageThumbnail.fs" />
+    <Compile Include="FrontPageHeader.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>

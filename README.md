@@ -36,7 +36,7 @@ To run the tests using the command line and of course in your CI server, you hav
 npm test
 ```
 
-# Technical Implementation of The Trainge Protype
+# Technical Implementation of The Trainge Prototype
 
 The Trainge prototype is built as a web application written in a functional style using F#, as F# offer many language features that prevent program errors compared to other languages such as Javascript or Typescript. Using the Fable F# to Javascript compiler, the prototype is then able to be run as a web application in the browser. The F# code robustness is transitively applied to the resulting compiled Javascript when using Fable.
 

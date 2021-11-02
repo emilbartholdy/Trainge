@@ -37,9 +37,12 @@ open Model
           Bulma.content [
             prop.children [
               Bulma.tag [
-                Bulma.color.isSuccess
+                prop.style [
+                  style.backgroundColor (state.Document.Tag |> snd)
+                  style.color "#FFF"
+                ]
                 Bulma.tag.isMedium
-                prop.text state.Document.Tag
+                prop.text (state.Document.Tag |> fst)
               ]
               Html.h3 state.Document.Title
               Html.p state.Document.Subtitle

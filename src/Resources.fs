@@ -3,89 +3,126 @@ module Resources
   open Model
 
   (* MEDIA *)
-  let res1: Video   = ("./videos/welcome-video.mp4", 7)
-  let res2connect   = Image "./img/connect.png"
-  let res3relion    = Image "./img/relion.png"
-  let res4routific  = Image "./img/routific.png"
+  let welcomeVideo: Video   = ("./videos/welcome-video.mp4", 7)
+  let connectImg   = Image "./img/connect.png"
+  let relionImg    = Image "./img/relion.png"
+  let routificImg  = Image "./img/routific.png"
 
   (* TITLES *)
-  let mediaPageTitle1 = "Tools: The Simple Feast Delivery App"
-  let mediaPageTitle2 = "Connect with Fellow Drivers"
-  let mediaPageTitle3 = "Tools: Introduction to the Relion App for Shift Planning"
+  let title1 = "Introduction to Relion app: Shift planning"
+  let title2 = "Introduction to Routific app: Route planning"
+  let title3 = "Connect with Fellow Drivers"
 
   (* SUBTITLES *)
-  let mediaPageSubtitle1 = "
-  When you are out on your ride you will be using our customers application for navigation.
-  These applications vary in the way they look, however, they have the same functionality.
-  In this video we give you an introduction to the different customer applications that we use.
-  "
+  let subtitle1 = 
+    """
+    You will use the app called Relion for scheduling shifts and plan your work days.
+    You need to register your work hours in the app after each shift.
+    If you are planning on going on vacation then you need to contact your supervisor
+    to get it approved and mark it in the app. 
+    """
 
-  let mediaPageSubtitle2 = "
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-  quasi architecto beatae vitae dicta sunt explicabo.
-  "
+  let subtitle2 =
+    """
+    You will use the app called Relion for scheduling shifts and plan your work days.
+    You need to register your work hours in the app after each shift.
+    If you are planning on going on vacation then you need to contact your supervisor
+    to get it approved and mark it in the app. 
+    """
 
-  let mediaPageSubtitle3 = "
-  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-  sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur?
-  "
+  let subtitle3 =
+    """
+    You will use the app called Relion for scheduling shifts and plan your work days.
+    You need to register your work hours in the app after each shift.
+    If you are planning on going on vacation then you need to contact your supervisor
+    to get it approved and mark it in the app. 
+    """
 
-  (* CONTENTs *)
-  let mediaPageContent1 = """# The Three Applications
+  (* CONTENTS *)
+  let content1 = 
+    """
+# Operire auxiliaria
+
+## Incunabula fortis omnes horruit aura
+
+Lorem markdownum servaturis manus accipiunt oculis musta *fugit pervenientia
+magis* tu tamen ita maduerunt. Magnum nec Egeriae inde sermone volenti si
+timidi; vicit est calcare insula quondam nimia facientia atque ignarum te
+deriguisse. Laetaque tinguit semine crepitantibus cursu.
+
+- Medios tuta verso
+- Videt illa tellus
+- Aequora thracius antiquus doloris
+- Te tecta et petit tenebrisque tellus ulciscitur
+- Petitve longe et gravis ore Vesta neque
+
+## Aristis oculos tuum ad meas silvis
+
+Mentibus genus legi qui caelo dixerat. Bello ut tremens insula incustoditae
+creatus tutum scopulos [et](http://cepitpericli.net/intervoluitque.php) lumina
+tela quod est, antiquarum? Terrae nam dedere non dies legati quibus, inposita
+ictibus fluctus lustrabere parenti oculos! Exanimesque quarto quid, vocabula in
+secum Cadmeida surrexere metuendus Atlantis nubibus.
+
+- Iniere certaminis proicit cupioque cursu
+- Cacumine est Iasone tersere
+- Per pocula quaesita haeserat caluere centum tellus
+- Purpureusque perque adnuit opus
   
-  Here at *Chainge* we use the following three applications (until further are added).
+    """
+  
+  let resources1 = 
+    """
+# Resources
 
-  * Simple Feast Delivery Application
-  * Aarstiderne Delivery Application
-  * Økologi A/S Application.
+- [Download Relion on the App Store](https://apps.apple.com/us/app/relion/id1500773464#?platform=iphone)
+- [Download Relion on the Play Store](https://play.google.com/store/apps/details?id=com.relion.android&hl=da)
+    """
+      
+  let resources2 =
+    """
+# Resources
 
-  Please download these applications to your mobile phone in the App Store (see resources link below).
+- [Download Routific on the App Store](https://apps.apple.com/us/app/routific-driver/id1502763779)
+- [Download Routific on the Play Store](https://play.google.com/store/apps/details?id=com.routific.driverapp&hl=da)
+    """
 
-  If you become sick it is important that you fill out the illness form and contact either Thore or Jakub.
-  Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-  It was popularised in the 1960s with
+  let resources3 =
+    """
+# Resources
 
-  # Resources
-
-  * [Link to Simple Feast Delivery Application]()
-  * [Link to Aarstiderne Delivery Application]()
-  * [Link to Økologi A/S Application]()
-  * [Link to Illness Form]()
-  """
+- [Download WhatsApp on the App Store](https://apps.apple.com/us/app/whatsapp-messenger/id310633997)
+- [Download WhatsApp on the Play Store](https://play.google.com/store/apps/details?id=com.whatsapp&hl=da&gl=US)
+    """
 
   let mediaPageContent2 = "# Hello"
 
-  let tagSocial = "Social"
-  let tagLearningTool = "Learning Tools"
-  let tagNewBiker = "For New Bikers"
+  let tagSocial: Tag = ("Social", "#96C254")
+  let tagTool: Tag = ("Tools", "#8D51F6")
 
   let doc1 : Document = {
     Id = 1
-    Title = mediaPageTitle1;
-    Subtitle = mediaPageSubtitle1;
-    Content = mediaPageContent1;
-    Media = res2connect;
-    Tag = tagSocial;
+    Title = title1;
+    Subtitle = subtitle1;
+    Content = (content1 + resources1);
+    Media = relionImg;
+    Tag = tagTool;
   }
   
   let doc2 : Document = {
     Id = 2
-    Title = mediaPageTitle2;
-    Subtitle = mediaPageSubtitle2;
-    Content = mediaPageContent1;
-    Media = res3relion;
-    Tag = tagLearningTool;
+    Title = title2;
+    Subtitle = subtitle2;
+    Content = (content1 + resources2);
+    Media = routificImg;
+    Tag = tagTool;
   }
   
   let doc3 : Document = {
     Id = 3
-    Title = mediaPageTitle3;
-    Subtitle = mediaPageSubtitle3;
-    Content = mediaPageContent1;
-    Media = res4routific;
-    Tag = tagNewBiker;
+    Title = title3;
+    Subtitle = subtitle3;
+    Content = (content1 + resources3);
+    Media = connectImg;
+    Tag = tagSocial;
   }

@@ -14,7 +14,7 @@ type MediaResource =
 
 type Color = string
 
-type Tag = string
+type Tag = (string * Color)
 
 type DocumentId = int
 

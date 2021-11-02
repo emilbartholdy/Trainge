@@ -55,7 +55,7 @@ let update (msg: Msg) (state: State): State =
 let fphState: FrontPageHeader.State =  {
     Title = "Welcome to the Chainge Knowledgebase"; 
     Subtitle = "Watch these videos to help you get started."; 
-    Video = Resources.res1
+    Video = Resources.welcomeVideo
 }
 
 let renderMediaPageThumbnails state dispatch =

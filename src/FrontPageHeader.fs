@@ -45,7 +45,7 @@ let render (state: State) (dispatch: Msg -> unit) =
                                 ]
                                 prop.children [
                                     Html.img [
-                                        prop.src "/graphics/logo.png"
+                                        prop.src "./graphics/logo.png"
                                     ]
                                 ]
                               ]

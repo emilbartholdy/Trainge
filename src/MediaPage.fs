@@ -41,7 +41,7 @@ open Model
                                     ]
                                     prop.children [
                                         Html.img [
-                                            prop.src "/graphics/logo.png"
+                                            prop.src "./graphics/logo.png"
                                         ]
                                     ]
                                 ]

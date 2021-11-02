@@ -3,10 +3,10 @@ module Resources
   open Model
 
   (* MEDIA *)
-  let res1: Video   = ("/videos/welcome-video.mp4", 7)
-  let res2connect   = Image "/img/connect.png"
-  let res3relion    = Image "/img/relion.png"
-  let res4routific  = Image "/img/routific.png"
+  let res1: Video   = ("./videos/welcome-video.mp4", 7)
+  let res2connect   = Image "./img/connect.png"
+  let res3relion    = Image "./img/relion.png"
+  let res4routific  = Image "./img/routific.png"
 
   (* TITLES *)
   let mediaPageTitle1 = "Tools: The Simple Feast Delivery App"

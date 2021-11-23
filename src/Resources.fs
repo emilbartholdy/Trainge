@@ -24,18 +24,16 @@ module Resources
 
   let subtitle2 =
     """
-    You will use the app called Relion for scheduling shifts and plan your work days.
-    You need to register your work hours in the app after each shift.
-    If you are planning on going on vacation then you need to contact your supervisor
-    to get it approved and mark it in the app. 
+    Your delivery routes are presented through the Routific app.
+    A delivery route encompasses the sum of your destinations, beginning and ending at Chainge's headquarters.
+    If you're unsure how to reach a destination, Routific provides turn-by-turn navigation to guide you through the streets.
     """
 
   let subtitle3 =
     """
-    You will use the app called Relion for scheduling shifts and plan your work days.
-    You need to register your work hours in the app after each shift.
-    If you are planning on going on vacation then you need to contact your supervisor
-    to get it approved and mark it in the app. 
+    Your delivery routes are presented through the Routific app.
+    A delivery route encompasses the sum of your destinations, beginning and ending at Chainge's headquarters.
+    If you're unsure how to reach a destination, Routific provides turn-by-turn navigation to guide you through the streets. 
     """
 
   (* CONTENTS *)

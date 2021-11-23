@@ -31,9 +31,9 @@ module Resources
 
   let subtitle3 =
     """
-    Your delivery routes are presented through the Routific app.
-    A delivery route encompasses the sum of your destinations, beginning and ending at Chainge's headquarters.
-    If you're unsure how to reach a destination, Routific provides turn-by-turn navigation to guide you through the streets. 
+    Chainge is not just a workplace — it's also a community. 
+    e believe great work requires great communication and strong bonds between employees.
+    Reach out to your co-workers to get invited to the WhatsApp chat group for Drivers engage in social activities.
     """
 
   (* CONTENTS *)

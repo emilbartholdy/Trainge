@@ -53,8 +53,8 @@ let update (msg: Msg) (state: State): State =
 
 
 let fphState: FrontPageHeader.State =  {
-    Title = "Welcome to the Trainge – Chainge's knowledgebase"; 
-    Subtitle = "Watch the introduction video."; 
+    Title = "Welcome to Trainge – Chainge's knowledgebase"; 
+    Subtitle = "Watch the introduction video"; 
     Video = Resources.welcomeVideo
 }
 
